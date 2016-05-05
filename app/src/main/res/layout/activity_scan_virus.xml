@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/myTopTitle"
+        android:text="手机杀毒" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.haijun.mymobilemanager.ScanVirusActivity">
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingRight="5dp"
+            android:id="@+id/fl_scanvirus_image">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_scanner_malware"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/iv_scanvirus_anmi"
+                android:src="@drawable/act_scanning_03"/>
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在扫描"
+            android:paddingTop="20dp"
+            android:layout_toRightOf="@id/fl_scanvirus_image"
+            android:id="@+id/tv_scanvirus_scantext"/>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pb_scanvirus_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/pb_cache_bg"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:layout_toRightOf="@id/fl_scanvirus_image"
+            android:layout_below="@id/tv_scanvirus_scantext"/>
+
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_scanvirus_showitem">
+    </ListView>
+</LinearLayout>
+

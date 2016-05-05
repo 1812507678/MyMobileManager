@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/iv_itemusdata_image"
+        android:src="@android:drawable/sym_def_app_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:id="@+id/tv_itemusdata_appname"
+        android:layout_toRightOf="@id/iv_itemusdata_image"
+        android:layout_marginTop="10dp"
+        android:text="asmasjaksaska"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:id="@+id/tv_itemusdata_rxdata"
+       android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="asmasjaksaska"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:id="@+id/tv_itemusdata_txdata"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_itemusdata_rxdata"
+        android:text="asmasjaksaska"
+        />
+
+
+
+
+</RelativeLayout>

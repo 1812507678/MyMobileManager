@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingItem">
+        <attr name="checkstring" format="string"></attr>
+        <attr name="uncheckstring" format="string"></attr>
+        <attr name="spkeyname" format="string"></attr>
+        <attr name="udpadetitle" format="string"></attr>
+    </declare-styleable>
+</resources>

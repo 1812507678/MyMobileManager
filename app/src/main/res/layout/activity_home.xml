@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.haijun.mymobilemanager.HomeActivity">
+    <TextView
+        style="@style/myTopTitle"
+        android:text="功能列表" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="2dp"
+        android:text="安全卫士正在保护您的手机，您的信任，就是我们做的更好的最大动力。。。"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginTop="20dp"
+        android:id="@+id/gv_home_content"
+        >
+
+    </GridView>
+
+</LinearLayout>
